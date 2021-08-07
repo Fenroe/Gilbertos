@@ -34,7 +34,9 @@ const sectionTwoData = (() => {
         const name = "home-text-container";
         const elementOneName = "home-story-text";
         const elementOneTag = "h2";
-        const elementOneText = "Test";
+        const elementOneText = `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero mollitia fuga distinctio 
+        sint ipsa placeat pariatur reiciendis aspernatur sunt quibusdam adipisci dolorem voluptatem, quis, tenetur quam 
+        provident iusto deserunt? Quas?`;
 
         return {
             name,

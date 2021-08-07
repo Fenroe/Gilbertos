@@ -1,9 +1,7 @@
-import { sectionOneConstructor } from "./sectionOneConstructor";
-import { sectionTwoConstructor } from "./sectionTwoConstructor";
+import { loadHome } from "./loadHome";
 import "./components/main.css";
 
-sectionOneConstructor.fillSection();
-sectionTwoConstructor.fillSection();
+loadHome();
 
 
 

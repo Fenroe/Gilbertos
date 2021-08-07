@@ -4,49 +4,49 @@ const sectionThreeData = (() => {
         const name = "home-cta";
         const subDivOne = (() => {
             const name = "home-cta-link";
-            const elementOneAttributeKey = "href";
-            const elementOneAttributeValue = "#";
-            const elementOneTag = "a";
+            const elementOneHref = "#";
             const elementOneText = "See Our Menu";
 
             return {
                 name,
-                elementOneAttributeKey,
-                elementOneAttributeValue,
-                elementOneTag,
-                elementOneText
-            }
-        })();
-
-        const subDivTwo = (() => {
-            const name = "home-cta-link";
-            const elementOneAttributeKey = "href";
-            const elementOneAttributeValue = "#";
-            const elementOneTag = "a";
-            const elementOneText = "Get In Touch";
-
-            return {
-                name,
-                elementOneAttributeKey,
-                elementOneAttributeValue,
-                elementOneTag,
+                elementOneHref,
                 elementOneText
             }
         })();
 
         return {
             name,
-            subDivOne,
-            subDivTwo
-        }
+            subDivOne
+        };
+    })();
+
+    const divTwo = (() => {
+        const name = "home-cta";
+        const subDivOne = (() => {
+            const name = "home-cta-link";
+            const elementOneHref = "#";
+            const elementOneText = "Get In Touch";
+
+            return {
+                name,
+                elementOneHref,
+                elementOneText
+            };
+        })();
+
+        return {
+            name,
+            subDivOne
+        };
     })();
 
     return {
         name,
-        divOne
-    }
+        divOne,
+        divTwo
+    };
 })();
 
 export {
     sectionThreeData
-}
+};

@@ -1,6 +1,20 @@
-import { elementCreator } from "./elementCreator";
-import { sectionOneData } from "./sectionOneData";
+import { sectionOneConstructor } from "./sectionOneConstructor";
+import { sectionTwoConstructor } from "./sectionTwoConstructor";
+import { sectionThreeConstructor } from "./sectionThreeConstructor";
 
-const loadHomePage =(() => {
-    
-})();
+const content = document.getElementById("content");
+
+const loadHome = () => {
+    sectionOneConstructor.fillSection();
+    sectionTwoConstructor.fillSection();
+    sectionThreeConstructor.fillSection();
+    content.append(
+        sectionOneConstructor.section,
+        sectionTwoConstructor.section,
+        sectionThreeConstructor.section
+    );
+};
+
+export {
+    loadHome
+};

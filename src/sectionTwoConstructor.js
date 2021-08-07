@@ -2,8 +2,7 @@ import { sectionTwoData } from "./sectionTwoData";
 import { elementCreator } from "./elementCreator";
 
 const sectionTwoConstructor = (() => {
-    const content = document.getElementById("content");
-    const parent = elementCreator.makeSection(sectionTwoData.name);
+    const section = elementCreator.makeSection(sectionTwoData.name);
     const divOne = elementCreator.makeDiv(sectionTwoData.divOne.name);
     const divOneTitle = elementCreator.makeText(
         sectionTwoData.divOne.elementOneTag,
@@ -37,11 +36,11 @@ const sectionTwoConstructor = (() => {
         fillDivOne();
         fillDivTwo();
         fillDivThree();
-        parent.append(divOne, divTwo, divThree);
-        content.append(parent);
+        section.append(divOne, divTwo, divThree);
     };
 
     return {
+        section,
         fillSection
     }
 })();

@@ -2,8 +2,7 @@ import { sectionOneData } from "./sectionOneData";
 import { elementCreator } from "./elementCreator";
 
 const sectionOneConstructor = (() => {
-    const content = document.getElementById("content");
-    const parent = elementCreator.makeSection(sectionOneData.name);
+    const section = elementCreator.makeSection(sectionOneData.name);
     const divOne = elementCreator.makeDiv(sectionOneData.divOne.name);
     const divOneHeading = elementCreator.makeText(
         sectionOneData.divOne.elementOneTag,
@@ -19,17 +18,17 @@ const sectionOneConstructor = (() => {
     const fillDivOne = () => {
         divOne.append(divOneHeading);
         divOne.append(divOneSubheading);
-    }
+    };
 
     const fillSection = () => {
         fillDivOne();
-        parent.append(divOne);
-        content.append(parent);
-    }
+        section.append(divOne);
+    };
 
     return {
+        section,
         fillSection
-    }
+    };
 })();
 
 export {
