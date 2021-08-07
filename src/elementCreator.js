@@ -16,6 +16,13 @@ const elementCreator = (() => {
         return text;
     };
 
+    const makeLink = (elementHref, elementText) => {
+        let link = document.createElement("a");
+        link.setAttribute("href", elementHref);
+        link.innerHTML = elementText;
+        return link;
+    }
+
     const makeDiv = elementClass => {
         let div = document.createElement("div");
         div.classList.add(elementClass);
@@ -31,6 +38,7 @@ const elementCreator = (() => {
     return {
         makeImage,
         makeText,
+        makeLink,
         makeDiv,
         makeSection
     }
