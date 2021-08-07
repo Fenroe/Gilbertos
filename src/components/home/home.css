@@ -1,8 +1,4 @@
-body {
-    background-color: #F6EEC9;
-}
-
-.home-title-container {
+.home-hero-container {
     background-image: url("home-title-background.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,7 +13,7 @@ body {
     align-items: center;
 }
 
-.home-heading-container {
+.home-hero-heading-container {
     height: 16rem;
     background: hsla(0, 88%, 34%, 0.5);
     box-sizing: border-box;
@@ -26,7 +22,7 @@ body {
     border-radius: 1rem;
 }
 
-.home-heading {
+.home-hero-heading {
     font-size: 10rem;
     letter-spacing: .8rem;
     color: white;
@@ -34,7 +30,7 @@ body {
     text-align: center;
 }
 
-.home-subheading {
+.home-hero-subheading {
     text-align: center;
     font-size: 4rem;
     color: white;

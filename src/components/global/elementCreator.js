@@ -8,8 +8,8 @@ const elementCreator = (() => {
         return image; 
     };
 
-    const makeText = (element, elementText, elementClass) => {
-        let text = document.createElement(element);
+    const makeText = (elementTag, elementText, elementClass) => {
+        let text = document.createElement(elementTag);
         let textNode = document.createTextNode(elementText);
         text.append(textNode);
         text.classList.add(elementClass);
@@ -21,29 +21,22 @@ const elementCreator = (() => {
         link.setAttribute("href", elementHref);
         link.innerHTML = elementText;
         return link;
-    }
+    };
 
-    const makeDiv = elementClass => {
-        let div = document.createElement("div");
-        div.classList.add(elementClass);
-        return div;
-    }
-
-    const makeSection = elementClass => {
-        let section = document.createElement("section");
-        section.classList.add(elementClass);
-        return section;
-    }
+    const makeContainer = (elementTag, elementClass) => {
+        let container = document.createElement(elementTag);
+        container.classList.add(elementClass);
+        return container;
+    };
 
     return {
         makeImage,
         makeText,
         makeLink,
-        makeDiv,
-        makeSection
-    }
+        makeContainer
+    };
 })();
 
 export {
     elementCreator
-}
+};

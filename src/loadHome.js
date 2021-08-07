@@ -1,16 +1,16 @@
-import { sectionOneConstructor } from "./components/home/sectionOneConstructor";
-import { sectionTwoConstructor } from "./components/home/sectionTwoConstructor";
-import { sectionThreeConstructor } from "./components/home/sectionThreeConstructor";
+import { homeHeroConstructor } from "./components/home/homeHeroConstructor";
+import { homeStoryConstructor } from "./components/home/homeStoryConstructor";
+import { homeCtaConstructor } from "./components/home/homeCtaConstructor";
 import { content } from "./components/global/sharedVariables";
 
 const loadHome = () => {
-    sectionOneConstructor.fillSection();
-    sectionTwoConstructor.fillSection();
-    sectionThreeConstructor.fillSection();
+    homeHeroConstructor.fillSection();
+    homeStoryConstructor.fillSection();
+    homeCtaConstructor.fillSection();
     content.append(
-        sectionOneConstructor.section,
-        sectionTwoConstructor.section,
-        sectionThreeConstructor.section
+        homeHeroConstructor.section,
+        homeStoryConstructor.section,
+        homeCtaConstructor.section
     );
 };
 

@@ -1,16 +1,19 @@
-const sectionOneData = (() => {
-    const name = "home-title-container";
+const homeHeroData = (() => {
+    const name = "home-hero-container";
+    const tag ="section";
     const divOne = (() => {
-        const name = "home-heading-container";
-        const elementOneName = "home-heading";
+        const name = "home-hero-heading-container";
+        const tag = "div";
+        const elementOneName = "home-hero-heading";
         const elementOneTag = "h1";
         const elementOneText = "Gilberto's"
-        const elementTwoName = "home-subheading";
+        const elementTwoName = "home-hero-subheading";
         const elementTwoTag = "h2";
         const elementTwoText = "Slice of Italy";
 
         return {
             name,
+            tag,
             elementOneName,
             elementOneTag,
             elementOneText,
@@ -22,10 +25,11 @@ const sectionOneData = (() => {
 
     return {
         name,
+        tag,
         divOne
     }        
 })();
 
 export {
-    sectionOneData
+    homeHeroData
 };
