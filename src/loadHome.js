@@ -1,8 +1,7 @@
-import { sectionOneConstructor } from "./sectionOneConstructor";
-import { sectionTwoConstructor } from "./sectionTwoConstructor";
-import { sectionThreeConstructor } from "./sectionThreeConstructor";
-
-const content = document.getElementById("content");
+import { sectionOneConstructor } from "./components/home/sectionOneConstructor";
+import { sectionTwoConstructor } from "./components/home/sectionTwoConstructor";
+import { sectionThreeConstructor } from "./components/home/sectionThreeConstructor";
+import { content } from "./components/global/sharedVariables";
 
 const loadHome = () => {
     sectionOneConstructor.fillSection();

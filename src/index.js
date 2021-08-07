@@ -1,5 +1,5 @@
 import { loadHome } from "./loadHome";
-import "./components/main.css";
+import "./master.css";
 
 loadHome();
 
