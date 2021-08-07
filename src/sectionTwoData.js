@@ -1,4 +1,4 @@
-import "./components/home-text-image.jpg";
+import homeTextImage from "./components/home-text-image.jpg";
 
 const sectionTwoData = (() => {
     const name = "home-story-container";
@@ -19,7 +19,7 @@ const sectionTwoData = (() => {
     const divTwo = (() => {
         const name = "home-story-image-container";
         const elementOneName = "home-story-image";
-        const elementOneSource = "./components/home-text-image.jpg";
+        const elementOneSource = homeTextImage;
         const elementOneAlt = "";
 
         return {
