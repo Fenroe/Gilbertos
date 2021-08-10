@@ -8,6 +8,7 @@ loadHome();
 
 import { menuSection } from "./components/menu/menuSection";
 import { content } from "./components/global/sharedVariables";
-import { elementAppender } from "./components/global/elementAppender";
+import { appendMenu } from "./components/menu/appendMenuSection";
+import "./master.css";
 
-elementAppender(menuSection, content);
+appendMenu();

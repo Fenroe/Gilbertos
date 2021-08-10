@@ -1,0 +1,53 @@
+.menu-section-heading-container {
+    width: 100%;
+    height: 50rem;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-section-heading {
+    font-size: 10rem;
+    color: hsl(49, 71%, 88%);
+    background-color:hsla(0, 0%, 0%, 0.5);
+}
+
+.starters-heading {
+    background-image: url("./starters-background.jpeg");
+}
+
+.mains-heading {
+    background-image: url("./mains-background.jpg");
+}
+
+.desserts-heading {
+    background-image: url("./desserts-background.jpg");
+}
+
+.menu-items-container {
+    width: 70rem;
+    margin: 0 auto;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 20rem);
+    justify-content: space-around;
+    align-items: space-around;
+}
+
+.menu-item {
+    width: 20rem;
+    text-align: center;
+}
+
+.menu-item h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 2rem 0;
+}
+
+.menu-item p {
+    font-size: 2rem;
+}

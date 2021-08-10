@@ -1,16 +1,17 @@
 import { elementConstructor } from "./element appender components/elementConstructor";
+import { makeExtraDataObject } from "./makeExtraDataObject";
+import { addExtraData } from "./addExtraData";
+import { elementExceptionHandler } from "./elementExceptionHandler";
 
-const elementAppender = (child, parent) => {
+const elementAppender = (child, parent, dataMark = "") => {
     const html = elementConstructor(child);
-    console.log(typeof(html));
     child.elements.forEach((element => {
-    /* if(element.name = "menu-item") {
-            break; // replace with unique function 
-        } else {
-            elementAppender(element, child);
-        }; */
-        elementAppender(element, html);
+        if(elementExceptionHandler(element, html, dataMark) === 0) {
+            elementAppender(element, html, dataMark);
+        };
     })); 
+    const extraData = makeExtraDataObject(dataMark);
+    addExtraData(child, html, extraData);
     parent.append(html);
 };
 
