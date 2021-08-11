@@ -3,7 +3,7 @@ import { homeCta } from "./homeCta";
 
 const homeCtaContainer = elementData(
     "home-cta-container",
-    "div",
+    "section",
     [
         homeCta
     ]

@@ -1,12 +1,15 @@
 const addLinkTarget = (element, text) => {
-    if(text === "Home") {
+    if(text == "Home") {
         element.target = "home";
+        console.log("home");
     };
-    if(text === "Menu" || text === "See Our Menu") {
+    if(text == "Menu" || text == "See Our Menu") {
         element.target = "menu";
+        console.log("menu");
     };
-    if(text === "Contact" || text === "Get In Touch") {
+    if(text == "Contact" || text == "Get In Touch") {
         element.target = "contact";
+        console.log("contact");
     };
 };
 

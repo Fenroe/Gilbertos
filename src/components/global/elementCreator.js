@@ -5,7 +5,8 @@ const elementCreator = data => {
         case "a":
             element.innerHTML = data.text;
             element.setAttribute("href", data.href);
-            element.setAttribute("data", element.target);
+            element.setAttribute("data-target", data.target);
+            console.log(element);
             break;
         case "h1": case "h2": case "h3": case "p":
             element.innerHTML = data.text;

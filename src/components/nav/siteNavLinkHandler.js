@@ -6,7 +6,8 @@ const siteNavLinkHandler = (element, elementParent, dataMark) => {
     const navLinkText = ["Home", "Menu", "Contact"];
     navLinkText.forEach(text => {
         siteNavLink.text = text;
-        addLinkTarget(element, text);
+        addLinkTarget(siteNavLink, text);
+        console.table(siteNavLink);
         elementAppender(element, elementParent, dataMark);
     });
 };
