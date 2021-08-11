@@ -1,43 +1,22 @@
-const elementCreator = (() => {
-
-    const makeImage = (source, alt, elementClass) => {
-        let image = document.createElement("img");
-        image.setAttribute("src", source);
-        image.setAttribute("alt", alt);
-        image.classList.add(elementClass);
-        return image; 
+const elementCreator = data => {
+    let element = document.createElement(data.tag);
+    element.classList.add(data.name);
+    switch(data.tag) {
+        case "a":
+            element.innerHTML = data.text;
+            element.setAttribute("href", data.href);
+            element.setAttribute("data", element.target);
+            break;
+        case "h1": case "h2": case "h3": case "p":
+            element.innerHTML = data.text;
+            break;
+        case "img":
+            element.setAttribute("src", data.source);
+            element.setAttribute("alt", data.alt);
+            break;
     };
-
-    const makeText = (elementTag, elementText, elementClass) => {
-        let text = document.createElement(elementTag);
-        let textNode = document.createTextNode(elementText);
-        text.append(textNode);
-        text.classList.add(elementClass);
-        return text;
-    };
-
-    const makeLink = (elementHref, elementText, elementTarget, elementClass) => {
-        let link = document.createElement("a");
-        link.setAttribute("href", elementHref);
-        link.innerHTML = elementText;
-        link.classList.add(elementClass);
-        link.setAttribute("data", elementTarget);
-        return link;
-    };
-
-    const makeContainer = (elementTag, elementClass) => {
-        let container = document.createElement(elementTag);
-        container.classList.add(elementClass);
-        return container;
-    };
-
-    return {
-        makeImage,
-        makeText,
-        makeLink,
-        makeContainer
-    };
-})();
+    return element;
+};
 
 export {
     elementCreator
