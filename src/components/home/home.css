@@ -1,4 +1,4 @@
-.home-hero-container {
+.home-title-container {
     background-image: url("home-title-background.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -13,7 +13,7 @@
     align-items: center;
 }
 
-.home-hero-heading-container {
+.home-heading-container {
     height: 16rem;
     background: hsla(0, 88%, 34%, 0.5);
     box-sizing: border-box;
@@ -22,7 +22,7 @@
     border-radius: 1rem;
 }
 
-.home-hero-heading {
+.home-heading {
     font-size: 10rem;
     letter-spacing: .8rem;
     color: white;
@@ -30,7 +30,7 @@
     text-align: center;
 }
 
-.home-hero-subheading {
+.home-subheading {
     text-align: center;
     font-size: 4rem;
     color: white;
@@ -92,17 +92,17 @@
     background-color: black;
 }
 
-.home-cta-link {
+.home-cta-link-container {
     transform: rotate(-45deg);
     width: 20rem;
 }
 
-.home-cta-link a {
+.home-cta-link {
     text-decoration: none;
     color: hsl(49, 71%, 88%);
     font-weight: bold;
 }
 
-.home-cta-link a:hover {
+.home-cta-link:hover {
     color: hsl(49, 71%, 100%);
 }

@@ -1,9 +1,8 @@
-const elementData = (name = "", tag = "", elements = [], sharedNames = []) => {
+const elementData = (name = "", tag = "", elements = []) => {
     return {
         name,
         tag,
         elements,
-        sharedNames
     };
 };
 

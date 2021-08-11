@@ -1,14 +1,7 @@
-/* import { loadNav } from "./loadNav";
-import { loadHome } from "./loadHome";
+import { appendHome } from "./components/home/appendHome";
+import { appendNav } from "./components/nav/appendNav";
+import { appendMenu } from "./components/menu/appendMenu";
 import "./master.css";
 
-loadNav();
-loadHome();
-*/
-
-import { menuSection } from "./components/menu/menuSection";
-import { content } from "./components/global/sharedVariables";
-import { appendMenu } from "./components/menu/appendMenuSection";
-import "./master.css";
-
-appendMenu();
+appendNav();
+appendHome();

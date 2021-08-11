@@ -1,0 +1,16 @@
+import { siteNavLink } from "./siteNavLink";
+import { elementAppender } from "../global/elementAppender";
+import { addLinkTarget } from "../global/addLinkTarget";
+
+const siteNavLinkHandler = (element, elementParent, dataMark) => {
+    const navLinkText = ["Home", "Menu", "Contact"];
+    navLinkText.forEach(text => {
+        siteNavLink.text = text;
+        addLinkTarget(element, text);
+        elementAppender(element, elementParent, dataMark);
+    });
+};
+
+export {
+    siteNavLinkHandler
+};

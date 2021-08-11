@@ -1,6 +1,6 @@
-import { menuSectionHeadingContainer } from "./menu section data components/menuSectionHeadingContainer";
+import { menuSectionHeadingContainer } from "./menuSectionHeadingContainer";
 import { elementData } from "../global/elementData";
-import { menuItemsContainer } from "./menu section data components/menuItemsContainer";
+import { menuItemsContainer } from "./menuItemsContainer";
 
 const menuSection = elementData(
     "menu-section",

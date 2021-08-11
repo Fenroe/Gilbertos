@@ -1,4 +1,4 @@
-import { elementConstructor } from "./element appender components/elementConstructor";
+import { elementConstructor } from "./elementConstructor";
 import { makeExtraDataObject } from "./makeExtraDataObject";
 import { addExtraData } from "./addExtraData";
 import { elementExceptionHandler } from "./elementExceptionHandler";

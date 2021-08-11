@@ -16,10 +16,12 @@ const elementCreator = (() => {
         return text;
     };
 
-    const makeLink = (elementHref, elementText) => {
+    const makeLink = (elementHref, elementText, elementTarget, elementClass) => {
         let link = document.createElement("a");
         link.setAttribute("href", elementHref);
         link.innerHTML = elementText;
+        link.classList.add(elementClass);
+        link.setAttribute("data", elementTarget);
         return link;
     };
 

@@ -1,8 +1,8 @@
-import { startersMenuData } from "./menu section data components/menu item components/startersMenuData";
-import { mainsMenuData } from "./menu section data components/menu item components/mainsMenuData";
-import { dessertsMenuData } from "./menu section data components/menu item components/dessertsMenuData";
-import { menuItemInfo } from "./menu section data components/menu item components/menu item info container components/menuItemInfo";
-import { menuItemName } from "./menu section data components/menu item components/menu item name container components/menuItemName";
+import { startersMenuData } from "./startersMenuData";
+import { mainsMenuData } from "./mainsMenuData";
+import { dessertsMenuData } from "./dessertsMenuData";
+import { menuItemInfo } from "./menuItemInfo";
+import { menuItemName } from "./menuItemName";
 import { elementAppender } from "./../global/elementAppender";
 
 const menuItemHandler = (element, elementParent, dataMark) => {
