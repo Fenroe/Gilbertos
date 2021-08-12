@@ -1,11 +1,15 @@
 import { menuItemHandler } from "../menu/menuItemHandler";
 import { siteNavLinkHandler } from "../nav/siteNavLinkHandler";
 import { homeCtaHandler } from "../home/homeCtaHandler";
+import { siteNavLogoHandler } from "../nav/siteNavLogoHandler";
 
 const elementExceptionHandler = (element, elementParent, dataMark) => {
     switch(element.name) {
         case "menu-item":
             menuItemHandler(element, elementParent, dataMark);
+            break;
+        case "site-nav-logo":
+            siteNavLogoHandler(element, elementParent, dataMark);
             break;
         case "site-nav-menu-item":
             siteNavLinkHandler(element, elementParent, dataMark);

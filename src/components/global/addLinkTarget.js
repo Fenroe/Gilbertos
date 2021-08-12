@@ -1,5 +1,5 @@
 const addLinkTarget = (element, text) => {
-    if(text == "Home") {
+    if(text == "Home" || text == "Giliberto's") {
         element.target = "home";
         console.log("home");
     };
