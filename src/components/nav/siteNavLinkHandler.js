@@ -7,11 +7,10 @@ const siteNavLinkHandler = (element, elementParent, dataMark) => {
     navLinkText.forEach(text => {
         siteNavLink.text = text;
         addLinkTarget(siteNavLink, text);
-        console.table(siteNavLink);
         elementAppender(element, elementParent, dataMark);
     });
 };
 
 export {
     siteNavLinkHandler
-};
+}; 

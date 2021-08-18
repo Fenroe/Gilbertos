@@ -4,8 +4,6 @@ import { homeCtaContainer } from "./homeCtaContainer";
 import { elementAppender } from "../global/elementAppender";
 import { content } from "../global/sharedVariables";
 import { activateLinks } from "../activateLinks";
-import { addLinkTarget } from "../global/addLinkTarget";
-
 
 const appendHome = () => {
     const homeSections = [
